@@ -1,17 +1,67 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="warning">
     <ion-title>
-      Tab 2
+      Joao's Pizzarias
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content [fullscreen]="true" color="light">
+  <ion-list-header color="light">
+    <ion-label class="ajustes">Cardápio</ion-label>
+    <ion-button>
+      <ion-icon class="pessoa" name="person-circle-sharp"></ion-icon>
+    </ion-button>
+  </ion-list-header>
+  <!--Barra de pesquisa-->
+  <ion-searchbar placeholder="Buscar" color="dark"></ion-searchbar>
+  <!--List header-->
+  <ion-list-header color="light">
+    <ion-label class="ajustes">Bebidas</ion-label>
+  </ion-list-header>
+  <!--Lista-->
+  <ion-list>
+    <!--Pizza1-->
+    <ion-item color="warning">
+      <ion-thumbnail slot="start">
+        <img src="https://us-southeast-1.linodeobjects.com/storage/democarrinhocerto/media/uploads/produto/_refrigerante_coca_cola_2l__28b01c89-c295-4eeb-9c0b-ccb99494f235.jpeg">
+      </ion-thumbnail>
+      <ion-label class="texto">Coca-Cola</ion-label>
+      <ion-badge class="preco" slot="end" color="success">R$ 8,00</ion-badge>
+    </ion-item>
+    <!--Pizza2-->
+    <ion-item color="warning">
+      <ion-thumbnail slot="start">
+        <img src="https://apoioentrega.vteximg.com.br/arquivos/ids/505055/177956_1.jpg?v=637889325043030000">
+      </ion-thumbnail>
+      <ion-label class="texto">Fanta</ion-label>
+      <ion-badge class="preco" slot="end" color="success">R$ 6,00</ion-badge>
+    </ion-item>
+    <!--Pizza3-->
+    <ion-item color="warning">
+      <ion-thumbnail slot="start">
+        <img src="https://w7.pngwing.com/pngs/767/129/png-transparent-orange-juice-breakfast-juicer-juice-food-breakfast-citrus.png">
+      </ion-thumbnail>
+      <ion-label class="texto">Suco Laranja</ion-label>
+      <ion-badge class="preco" slot="end" color="success">R$ 7,00</ion-badge>
+    </ion-item>
+    <!--Pizza4-->
+    <ion-item color="warning">
+      <ion-thumbnail slot="start">
+        <img src="https://thumbs.dreamstime.com/b/garrafa-da-bebida-de-sprite-isolada-no-branco-130706596.jpg">
+      </ion-thumbnail>
+      <ion-label class="texto">Sprite</ion-label>
+      <ion-badge class="preco" slot="end" color="success">R$ 8,00</ion-badge>
+    </ion-item>
+    <!--Pizza5-->
+    <ion-item color="warning">
+      <ion-thumbnail slot="start">
+        <img src="https://w7.pngwing.com/pngs/752/770/png-transparent-blue-water-glass-without-matting-blue-transparent-water-glass.png">
+      </ion-thumbnail>
+      <ion-label class="texto">Água</ion-label>
+      <ion-badge class="preco" slot="end" color="success">Gratis</ion-badge>
+    </ion-item>
+  </ion-list>
+
 </ion-content>
