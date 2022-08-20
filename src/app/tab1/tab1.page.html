@@ -1,17 +1,67 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Pizzaria
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content [fullscreen]="true">
+  <ion-list-header>
+    <ion-label>Cardápio</ion-label>
+    <ion-avatar>
+      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046849.png">
+    </ion-avatar>
+  </ion-list-header>
+  <!--Barra de pesquisa-->
+  <ion-searchbar placeholder="Buscar"></ion-searchbar>
+  <!--List header-->
+  <ion-list-header>
+    <ion-label>Pizzas</ion-label>
+  </ion-list-header>
+  <!--Lista-->
+  <ion-list>
+    <!--Pizza1-->
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-1932-5a1b7911dfda6e3c351c30de564da267.jpg">
+      </ion-thumbnail>
+      <ion-label>Mussarela</ion-label>
+      <ion-badge slot="end">R$ 22,00</ion-badge>
+    </ion-item>
+    <!--Pizza2-->
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://www.hummmpizzas.com.br/wp-content/uploads/2022/01/salgadas-suprema-brocolis.png">
+      </ion-thumbnail>
+      <ion-label>Brocólis</ion-label>
+      <ion-badge slot="end">R$ 26,00</ion-badge>
+    </ion-item>
+    <!--Pizza3-->
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://w7.pngwing.com/pngs/843/171/png-transparent-pizza-73-restaurant-catupiry-chicken-as-food-pizza-baked-goods-food-recipe.png">
+      </ion-thumbnail>
+      <ion-label>Frango</ion-label>
+      <ion-badge slot="end">R$ 20,00</ion-badge>
+    </ion-item>
+    <!--Pizza4-->
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://w7.pngwing.com/pngs/846/457/png-transparent-pizza-margherita-italian-cuisine-basil-mozzarella-pizza-food-baking-recipe.png">
+      </ion-thumbnail>
+      <ion-label>Margarita</ion-label>
+      <ion-badge slot="end">R$ 18,00</ion-badge>
+    </ion-item>
+    <!--Pizza5-->
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://w7.pngwing.com/pngs/1019/37/png-transparent-pizza-bacon-italian-cuisine-meatball-ham-pepperoni-sausage-food-beef-recipe.png">
+      </ion-thumbnail>
+      <ion-label>Calabresa</ion-label>
+      <ion-badge slot="end">R$ 20,00</ion-badge>
+    </ion-item>
+  </ion-list>
+
 </ion-content>
