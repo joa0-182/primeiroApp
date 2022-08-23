@@ -10,21 +10,9 @@
 }
 
 img {
-  width: 100px;
   border-radius: 50%;
 }
 
-.texto {
-  font-size: 1em;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.07);
-}
-
-.preco {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 13px;
-  color: black;
-  background-color: rgb(20, 244, 17);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.156);
+.textoCenter {
+  text-align: center;
 }
