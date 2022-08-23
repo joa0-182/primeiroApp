@@ -5,12 +5,12 @@
 ### **Tela Pizzas** 🍕
 
 <p align="center" >
-<img src = "https://user-images.githubusercontent.com/99850507/185727037-9abc9c5b-e591-442e-bec7-33cfc64d2c80.png" width="800px">
+<img src = "https://user-images.githubusercontent.com/99850507/186070043-f49a7542-58b7-4e09-9ed9-cb5404afe018.png" width="400px">
 </p>
 
 ### **Tela bebidas** 🍺
 
 <p align="center">
-<img src = "https://user-images.githubusercontent.com/99850507/185727039-bc6cd6a2-10d2-4bb9-ae0c-38a20b076bd0.png" width="800px">
+<img src = "https://user-images.githubusercontent.com/99850507/186070062-b18763c7-4147-43d1-95b6-991cf68fc618.png" width="400px">
 </p>
 
