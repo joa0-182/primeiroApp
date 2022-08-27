@@ -6,62 +6,116 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content [fullscreen]="true" color="dark">
 
-<ion-content [fullscreen]="true" color="light">
-  <ion-list-header color="light">
-    <ion-label class="ajustes">Cardápio</ion-label>
-    <ion-button>
-      <ion-icon class="pessoa" name="person-circle-sharp"></ion-icon>
-    </ion-button>
-  </ion-list-header>
-  <!--Barra de pesquisa-->
-  <ion-searchbar placeholder="Buscar" color="dark"></ion-searchbar>
-  <!--List header-->
-  <ion-list-header color="light">
-    <ion-label class="ajustes">Bebidas</ion-label>
-  </ion-list-header>
-  <!--Lista-->
-  <ion-list>
-    <!--Pizza1-->
-    <ion-item color="warning">
-      <ion-thumbnail slot="start">
-        <img src="https://us-southeast-1.linodeobjects.com/storage/democarrinhocerto/media/uploads/produto/_refrigerante_coca_cola_2l__28b01c89-c295-4eeb-9c0b-ccb99494f235.jpeg">
-      </ion-thumbnail>
-      <ion-label class="texto">Coca-Cola</ion-label>
-      <ion-badge class="preco" slot="end" color="success">R$ 8,00</ion-badge>
-    </ion-item>
-    <!--Pizza2-->
-    <ion-item color="warning">
-      <ion-thumbnail slot="start">
-        <img src="https://apoioentrega.vteximg.com.br/arquivos/ids/505055/177956_1.jpg?v=637889325043030000">
-      </ion-thumbnail>
-      <ion-label class="texto">Fanta</ion-label>
-      <ion-badge class="preco" slot="end" color="success">R$ 6,00</ion-badge>
-    </ion-item>
-    <!--Pizza3-->
-    <ion-item color="warning">
-      <ion-thumbnail slot="start">
-        <img src="https://w7.pngwing.com/pngs/767/129/png-transparent-orange-juice-breakfast-juicer-juice-food-breakfast-citrus.png">
-      </ion-thumbnail>
-      <ion-label class="texto">Suco Laranja</ion-label>
-      <ion-badge class="preco" slot="end" color="success">R$ 7,00</ion-badge>
-    </ion-item>
-    <!--Pizza4-->
-    <ion-item color="warning">
-      <ion-thumbnail slot="start">
-        <img src="https://thumbs.dreamstime.com/b/garrafa-da-bebida-de-sprite-isolada-no-branco-130706596.jpg">
-      </ion-thumbnail>
-      <ion-label class="texto">Sprite</ion-label>
-      <ion-badge class="preco" slot="end" color="success">R$ 8,00</ion-badge>
-    </ion-item>
-    <!--Pizza5-->
-    <ion-item color="warning">
-      <ion-thumbnail slot="start">
-        <img src="https://w7.pngwing.com/pngs/752/770/png-transparent-blue-water-glass-without-matting-blue-transparent-water-glass.png">
-      </ion-thumbnail>
-      <ion-label class="texto">Água</ion-label>
-      <ion-badge class="preco" slot="end" color="success">Gratis</ion-badge>
-    </ion-item>
-  </ion-list>
+  <ion-grid>
+    <ion-row>
+      <!--Bebida 1-->
+      <ion-col size="6">
+
+        <ion-card color="warning">
+          <img
+            src="https://www.drogariaminasbrasil.com.br/media/product/dc1/refrigerante-fanta-laranja-lata-350ml-6eb.jpg"
+            alt="fanta laranja">
+
+          <ion-item>
+            <ion-label class="textoBebida">Laranja</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>R$ 4,00</ion-label>
+            <ion-badge slot="end">
+              <ion-icon class="carrinho" name="cart"></ion-icon>
+            </ion-badge>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+      <!--Bebida 2-->
+      <ion-col size="6">
+        <ion-card color="tertiary">
+          <img
+            src="https://images-americanas.b2w.io/produtos/2639474514/imagens/fanta-uva-lata-350ml-pack-12-unidades/2639474522_1_large.jpg"
+            alt="fanta uva">
+
+          <ion-item>
+            <ion-label class="textoBebida">Uva</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>R$ 4,00</ion-label>
+            <ion-badge slot="end">
+              <ion-icon class="carrinho" name="cart"></ion-icon>
+            </ion-badge>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+      <!--Bebida 3-->
+      <ion-col size="6">
+        <ion-card color="medium">
+          <img
+            src="https://riomarrecife.com.br/recife/2020/02/Pepsi-350ml.jpg" alt="pepsi">
+          <ion-item>
+            <ion-label class="textoBebida">Pepsi</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>R$ 4,50</ion-label>
+            <ion-badge slot="end">
+              <ion-icon class="carrinho" name="cart"></ion-icon>
+            </ion-badge>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+      <!--Bebida 4-->
+      <ion-col size="6">
+        <ion-card color="danger">
+          <img
+            src="https://cf.shopee.com.br/file/29f36f17a55e1ab3f91a83ec2029aec8"
+            alt="fanta morango">
+
+          <ion-item>
+            <ion-label class="textoBebida">Morango</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>R$ 4,00</ion-label>
+            <ion-badge slot="end">
+              <ion-icon class="carrinho" name="cart"></ion-icon>
+            </ion-badge>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+      <!--Bebida 5-->
+      <ion-col size="6">
+        <ion-card color="warning">
+          <img
+            src="https://comeonburger.com.br/wp-content/uploads/2019/12/laranja.jpg"
+            alt="suco laranja">
+
+          <ion-item>
+            <ion-label class="textoBebida">Suco Laranja</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>R$ 7,00</ion-label>
+            <ion-badge slot="end">
+              <ion-icon class="carrinho" name="cart"></ion-icon>
+            </ion-badge>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+      <!--Bebida 6-->
+      <ion-col size="6">
+        <ion-card color="medium">
+          <img
+            src="https://us-southeast-1.linodeobjects.com/storage/storage-sandbox/media/uploads/produto/agua_mineral_indaia_500ml_e817f8ca-490a-47d4-9ee4-07ea696d7da0.jpg">
+          <ion-item>
+            <ion-label class="textoBebida">Água</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>R$ 2,00</ion-label>
+            <ion-badge slot="end">
+              <ion-icon class="carrinho" name="cart"></ion-icon>
+            </ion-badge>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
